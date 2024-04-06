@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="icon" href="alrtimg/ui_menu_icons/discord_logo_icon.png" type="favicon.icon">
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/tools-style.css">
+    <link rel="stylesheet" href="styles/page-resource.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@500&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Discord-Clone</title>
+</head>
+<body>
+    <div class="body-container">
+        <div class="left-side-content">
+            <div class="container">
+                <div class="logo-container">
+                    <img class="logo" src="alrtimg/user_inter/4180408_discord_squircle_icon.png" alt="">
+                </div>
+                  <div class="line-break"></div>
+                <div class="add-container">
+                   <div class="add-box">
+                    <img class="plus" src="alrtimg/user_inter/plus.png" alt="">
+                   </div>
+                </div> 
+               <div class="explore-container">
+                   <div class="add-box">
+                    <img class="navigation" src="alrtimg/user_inter/compass.png" alt="">
+                   </div>
+               </div>
+               <div class="line-break"></div>
+                <div class="explore-container">
+                <div class="add-box">
+                 <img class="plus" src="alrtimg/user_inter/downloads.png" alt="">
+                </div>
+            </div>
+        </div>
+        <div class="top-label">
+            <div class="label">
+                <p>Please check your email and follow the instruction to verfiy your account. 
+                    <button class="resend-btn">&nbsp;Resend</button>
+                 </p>
+            </div>
+        </div>
+        
+        <div class="middle-top-content">
+            <div class="searchbox">
+                <input class="findbox" placeholder="Find or star a conversation" type="text">
+            </div>
+             <div class="menubar">
+                <div class="child-div">
+                    <div class="friend-icon"><img src="alrtimg/ui_menu_icons/add-friend.png"></div>
+                    <div class="friends">Friends</div>
+                    <div class="divider"></div>
+                    <div onclick="onlinefun()" class="online" id="online">Online</div>
+                    <div onclick="alls()" class="all">All</div>
+                    <div onclick="pending()" class="pending">Pending</div>
+                    <div onclick="block()" class="blocked" id="blocked">Blocked</div>
+                    <div onclick="addfriend()" class="add-friend" id="addf">Add Friend</div>
+                </div>
+                <div class="toolbar">
+                 <div class="box1">
+                    <div class="bell-wrap" style="margin-right: 6.5px; margin-left: 6.5px;">
+                        <img class="bell" src="alrtimg/user_inter/notification.png" alt="">
+                    </div>
+                    <div class="divider"></div>
+                 </div>
+                 <div class="box2">
+                    <div class="indox">
+                        <span class="tooltip3">Help</span>
+                        <img src="alrtimg/user_inter/inbox.png" alt="">
+                    </div>
+                    <div class="help"><img src="alrtimg/user_inter/help-web-button.png" alt=""></div>
+                </div>
+                </div>
+            </div>
+        </div>
+       <div class="middle-left">
+           <div class="info">
+            <div class="menu-container"><div class="icon"><img src="alrtimg/ui_menu_icons/user.png"></div> 
+            Friends</div>
+            <div class="menu-container"><div class="icon"><img src="alrtimg/ui_menu_icons/nitro.png.png"></div>
+                 Nitro</div>
+            <div class="menu-container"><div class="icon"><img src="alrtimg/ui_menu_icons/store.png"></div> 
+                Shop</div>
+                <div><h2 class="dmsg">DIRECT MESSAGES <span><img class="p1us" src="alrtimg/ui_menu_icons/add.png" ></span></h2></div>
+                <div class="menu-container"><div class="icon"><img src="alrtimg/ui_menu_icons/profile.png"></div> 
+                Deleted User 3c20e0...</div>
+            </div>
+      
+            <div class="profile-container">
+            <div class="avatar-wrapper">
+                <div class="profile"><img src="alrtimg/ui_menu_icons/discord (2).png" alt=""></div>
+                <div class="user-detail">
+                    <div class="user-name">thewebdev</div>
+                    <div class="id">the#3567</div>
+                </div>
+            </div>
+            <div class="btn-wraps">
+                <div class="button-wrap">
+                    <span class="tooltip">Unmute</span>
+                    <img class="mic" src="alrtimg/user_inter/microphone-with-slash-interface-symbol-for-mute-audio.png" alt="">
+                </div>
+                <div class="button-wrap">
+                    <span class="tooltip1">Deafen</span>
+                    <img src="alrtimg/user_inter/headphone.png">
+                </div>
+                <div class="button-wrap">
+                    <span class="tooltip2">Settings</span>
+                    <img class="setting-png" src="alrtimg/user_inter/settings.png">
+                </div>
+            </div>
+           </div>
+        </div>
+        <div class="right-container">
+          <div class="uid-activies"> <span class="act"> <h2>Active Now</h2></span></div>
+          <div class="noact">
+            <div class="quit">It's quiet for now...</div>
+            <div>when a friend starts activity--like playing a <br>
+            game or hanging out we'll show it here!</div>
+          </div>
+        </div>
+        <div class="middle-container" id="midCon">
+            <div class="middle-container-up">
+                <span class="add-f"><h2>ADD FRIEND</h2></span> 
+                <div> <span class="arial">You can add friends with their Discord username.</span> </div>
+               <div class="addfriendInput-wrapper">
+                <input type="text" class="text-box" placeholder="You can add friends with their Discord username." >
+                <button class="req-btn">Send Friend Request</button>
+               </div>
+            </div>
+            <div class="middle-down">
+                                <div class="wumpus-container">
+                              <div class="wumpus-image">
+                      <img src="alrtimg/page_source/wumpus-waiting-img.png" alt="">
+                           </div>
+                         <div class="text-wrap">
+                       Wumpus is waiting on friends,You don't have friends Lol!
+                      </div>
+                </div>
+            </div>
+        </div>
+        <div class="middle-con" id="midCon2">
+            <div class="cont">
+              <img src="alrtimg/page_source/wumpus-online.png" alt="">
+            </div>
+            <div class="text-wraps">
+                No one's around to play with Wumpus!
+               </div>
+        </div>
+        <div class="middle-con" id="midCon3">
+            <div class="cont">
+              <img src="alrtimg/page_source/wumpus-block.png" alt="">
+            </div>
+            <div class="text-wraps">
+                You are enable to block the wumpus !.
+               </div>
+        </div>
+        <div class="middle-con" id="midCon4">
+            <div class="cont">
+              <img src="alrtimg/page_source/wumpus-pending.png" alt="">
+            </div>
+            <div class="text-wraps">
+                There are no pending Wumpus for now
+               </div>
+        </div>
+        <div class="middle-con" id="midCon5">
+            <div class="cont">
+              <img src="alrtimg/page_source/wumpus-waiting-img.png" alt="">
+            </div>
+            <div class="text-wraps">
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Wumpus is waiting on friends!
+               </div>
+        </div>
+
+        
+
+
+       
+    </div>
+ <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,24 @@
+.middle-con{
+    height: 600px;
+    width: 696px;
+    background-color: #313338;
+    position: absolute;
+    left: 312px;
+    top: 85px;
+    display: none;
+}
+.cont{
+    height: 200px; 
+    width: 200px;
+    margin-left: 120px;
+    margin-top: 150px;
+}
+.text-wraps{
+    font-family: Open Sans;
+    font-size: 14px;
+    width: 376.23px;
+    height: 20px;
+    color: #949BA4;
+    margin-top: 50px;
+    margin-left: 210px;
+}
